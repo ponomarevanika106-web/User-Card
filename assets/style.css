@@ -11,11 +11,11 @@ body {
   place-items: center;
   justify-content: center;
   display: flex;
-  height: 100vh;;
+  height: 400vh;;
 }
 
 .card {
-  margin: calc((100vh - var(--card-height)) / 2) auto;
+  margin: calc((400vh - var(--card-height)) / 2) auto;
   width: 280px;
   background: #fff;
   border-radius: 15px;
