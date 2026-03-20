@@ -1,27 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-
+}
+:root{
+  --card-height:750px;
 }
 
 body {
   background: #f2f2f2;
-  place-items: center;
-  justify-content: center;
-  display: flex;
-  height: 400vh;;
 }
 
 .card {
-  margin: calc((400vh - var(--card-height)) / 2) auto;
-  width: 280px;
+  margin: calc((100vh - var(--card-height)) / 2) auto;
+  width: 300px;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -29,8 +24,6 @@ body {
 
 .card-header {
   flex-direction: column;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 20px;
 }
@@ -88,14 +81,10 @@ h2 {
   content: "";
   position: absolute;
   right: 0;
-  top: 20%;
-  height: 60%;
-  width: 1px;
+  top: 10%;
+  height: 80%;
+  width: 3px;
   background: rgba(255,255,255,0.15);
-}
-
-.stat:last-child {
-  border-right: none;
 }
 
 .stat span {
@@ -107,20 +96,3 @@ h2 {
   font-size: 18px;
 }
 
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.follow-btn {
-  transition: all 0.3s ease;
-}
-
-.follow-btn:hover {
-  background: linear-gradient(to right, #3b82f6, #2563eb);
-  transform: scale(1.05);
-}
